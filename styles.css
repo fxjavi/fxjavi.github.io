@@ -10,6 +10,7 @@ body {
     animation-name: bg;
     animation-duration: 10s;
     animation-iteration-count: infinite;
+    animation-timing-function: cubic-bezier(0.86, 0, 0.07, 1);
     height: 100vh;
 }
 
@@ -47,6 +48,20 @@ h1, h2, h3, h4, h5, h6 {
 a {
     text-decoration: none;
     color: inherit;
+    animation-name: link;
+    animation-duration: 2s;
+}
+
+@keyframes link {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(.5rem);
+    }
+    100% {
+        transform: translateY(0);
+    }
 }
 
 a:hover {
