@@ -1,0 +1,252 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0em;
+}
+
+header {
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 65%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+header a {
+    display: flex;
+    flex-flow: row;
+    margin-left: 1em;
+    text-decoration: none;
+    color: inherit;
+}
+
+header a svg {
+    padding: 1em;
+}
+
+header nav {
+    width: 40%;
+}
+
+header nav ul {
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+}
+
+header nav ul li a {
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+    color: blue;
+    font-weight: bold;
+    text-decoration: none;
+    transition: ease;
+    transition-duration: .3s;
+}
+
+header nav ul li a svg {
+    padding-right: 0.5em;
+}
+
+header nav ul li a:hover {
+    transform: translateY(-0.3em);
+}
+
+main {
+    border-bottom: solid rgb(211, 211, 211) 3px;
+    padding-bottom: 1em;
+}
+
+ul {
+    list-style: none;
+}
+
+main article h1 {
+    text-align: center;
+}
+
+main article h2 {
+    text-align: center;
+}
+
+main article ul li h2 {
+    text-align: left;
+}
+
+main article section ul li h2{
+    font-size: 1.1em;
+    line-height: 1.6em;
+}
+
+main article section ul li p{
+    font-size: 0.9em;
+    line-height: 1.6em;
+}
+
+footer ul {
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+    align-content: space-around;
+    margin: 0em;
+    width: 100%;
+}
+
+footer ul li {
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+}
+
+button {
+    font-size: inherit;
+    margin: 1.5em auto 2em auto;
+    padding: 0.6em 2.5em;
+    font-size: 1.1em;
+}
+
+footer {
+    font-size: 0.8em;
+    margin-bottom: 4em;
+    display: flex;
+    flex-flow: column;
+}
+
+footer nav {
+    width: 40%;
+    display: flex;
+    flex-flow: row;
+    justify-content: space-around;
+    margin: 1em auto;
+}
+
+footer nav svg {
+    width: 4em;
+    height: 4em;
+    padding-top: 2em;
+    padding-bottom: 2em;
+    transition: ease;
+    transition-duration: .3s;
+}
+
+footer nav svg:hover {
+    transform: translateY(-.5em);
+}
+
+
+footer nav a {
+    display: inline-block;
+    width: 3.5em;
+    height: 3.5em;
+    margin: .5em;
+    text-indent: -9999px;
+    background-repeat: no-repeat;
+}
+
+.facebook {
+    background-image: url("iconos-sociales.svg#icono-facebook");
+}
+.facebook:hover {
+    background-image: url("iconos-sociales.svg#icono-facebook-over");
+}
+.twitter {
+    background-image: url("iconos-sociales.svg#icono-twitter");
+}
+.twitter:hover {
+    background-image: url("iconos-sociales.svg#icono-twitter-over");
+}
+.instagram {
+    background-image: url("iconos-sociales.svg#icono-instagram");
+}
+.instagram:hover {
+    background-image: url("iconos-sociales.svg#icono-instagram-over");
+}
+.youtube {
+    background-image: url("iconos-sociales.svg#icono-youtube");
+}
+.youtube:hover {
+    background-image: url("iconos-sociales.svg#icono-youtube-over");
+}
+
+.facebook, .twitter, .instagram, .youtube {
+    transition: cubic-bezier(0.23, 1, 0.320, 1);
+    transition-duration: .2s;
+}
+
+.facebook:hover, .twitter:hover, .instagram:hover, .youtube:hover {
+    transform: scale(1.5);
+}
+
+.oculta {
+    height: 4em;
+    width: 40%;
+    display: flex;
+    flex-flow: row;
+    justify-content: space-around;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 0em;
+    margin-top: 0em;
+    opacity: 0%;
+}
+
+.oculta:hover {
+    opacity: 100%;
+}
+
+.container {
+    max-width: 62em;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 1em;
+    padding-right: 1em;
+}
+
+.fila {
+    display: grid;
+	grid-template-columns: repeat(12, 1fr);
+    grid-gap: 1rem;
+    padding-left: 0em;
+}
+
+.tres-col {
+    grid-column-end: span 3;
+}
+
+.icono {
+    width: 1.5em;
+    height: 1.5em;
+    fill: currentColor
+}
+
+.ilustracion {
+    height: auto;
+    max-width: 5em;
+    padding-right: 0.2em;
+    margin-right: 0.2em;
+}
+
+#turquesa {
+    background-color: #00ffce;
+    width: 100%;
+    padding: 1em 0em;
+}
+
+#turquesa-flex {
+    display: flex;
+    flex-flow: column;
+    align-content: center;
+}
+
+#aprendizaje {
+    text-align: left;
+    font-size: 1.5em;
+    font-weight: normal;
+}
+
+#formacion {
+    font-size: 2.2em;
+    margin-bottom: 0.2em;
+}
+

@@ -1,0 +1,344 @@
+body {
+    font-family: helvetica;
+    color: rgb(255, 255, 255);
+    margin: 0;
+    background-color: #2e2e2e;
+    padding: 0;
+    line-height: 1.5em;
+    width: 100%;
+}
+p {
+    padding-top: 1em;
+    text-align:left;
+}
+h1 {
+    color: #404B55;
+    margin: 0.5em;
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+mark {
+    color: #38f3ea;
+    background-color: black;
+}
+
+header {
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    display: flex;
+    background-color: #38f3ea;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+nav {
+    display: flex;
+    flex-direction: row;
+}
+a {
+    color: white;
+    text-decoration: none;
+    margin: 0%;
+}
+figure {
+    float: right;
+    width: 50%;
+    margin: .2em 1em 1em 0;
+    padding-left: 2em;
+}
+figure img {
+    width: 100%;
+    height: auto;
+}
+figcaption{
+    font-size: .8em;
+    line-height: 1.3em;
+    text-align: right;
+}
+ul {
+    list-style: inside;
+    margin: 0px;
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+li {
+    padding-left: 2em;
+}
+main {
+    z-index: 2;
+    width: 80%;
+    margin-top: 2em;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1em 0.5em 0,5em;
+}
+article {
+    padding-bottom: 8em;
+    border-style: solid;
+    border-color: #38f3ea;
+    border-top-width: 0px;
+    border-left-width: 0px;
+    border-right-width: 0px;
+}
+footer {
+    margin-top: 10em;
+    display: grid;
+    grid-template-columns: 25% 25% 25%;
+    grid-gap: 3em;
+    background-color: #3b3b3b;
+    font-size: 0.7em;
+    color: rgb(255, 255, 255);
+    padding: 0.5em;
+    padding-left: 5em;
+}
+button {
+    background-color: #38f3ea;
+    padding: 0.8em;
+    margin-left: 1em;
+    border-radius: 3em;
+    border-style: none;
+    margin-top: 1em;
+}
+button:hover {
+    background-color: white;
+}
+input {
+    background-color: #2e2e2e;
+    padding: 0.8em;
+    border: none;
+    color: white;
+}
+iframe {
+    width: 100%;
+    margin-top: 5em;
+}
+td {
+    padding: 0.5em;
+}
+caption {
+    text-align: left;
+    font-size: 1.2em;
+    padding: 0.5em;
+    padding-right: 0.8em;
+    padding-left: 0.8em;
+    margin: 0.6em;
+    margin-bottom: 2em;
+    border-style: solid;
+    border-color: white;
+    border-width: 2px;
+    border-radius: 3em;
+    width: fit-content;
+}
+
+                                        /* CLASES */
+
+.h2-workshops {
+    color: #38f3ea;
+    font-family: "Montserrat";
+    font-size: 2.5em;
+    margin-bottom: 0.7em;
+    margin-right: 1.5em;
+    line-height: 110%;
+    max-width: 18em;
+}
+.h2-workshops:hover {
+    color: white;
+}
+.h2-workshop1, .h2-workshop2 {
+    display: block;
+    color: white;
+    font-family: "Montserrat";
+    font-size: 4em;
+    margin-bottom: 0.7em;
+    margin-right: auto;
+    margin-left: auto;
+    padding-bottom: 1.5em;
+    padding-top: 1.5em;
+    padding-left: 2em;
+    line-height: 110%;
+    width: auto;
+    background-size: cover;
+}
+
+.h2-workshop1 {
+    background-image: url("img1.jpg");
+}
+.h2-workshop2 {
+    background-image: url("img2.png");
+}
+.navegacion {
+    padding: 0.5em 1em 0.5em 1em;
+    margin: 0%;
+    color: black;
+    font-size: 1.1em;
+    border-radius: 2em;
+}
+.navegacion:hover {
+    background-color: white;
+}
+.workshop {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-gap: 2em;
+    margin-top: 8em;
+}
+.info {
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;;
+}
+.caract {
+    display: inline-block;
+    margin-left: 2em;
+}
+.caract-ind {
+    color: white;
+    width: fit-content;
+    border-style: solid;
+    border-width: 2px;
+    border-color: white;
+    padding: 0.5em 1em 0.5em 1em;
+    border-radius: 3em;
+    margin-top: 0.2em;
+}
+.imagen {
+    max-width: 100%;
+}
+.footer-titulo {
+    font-size: 1.2em;
+    color: white;
+    padding-top: 2em;
+}
+.footer-titulo:hover {
+    color: inherit;
+}  
+.desplegable {
+   position: relative;
+    display: inline-block;
+}  
+.contenido-desplegable {
+    font-size: 1em;
+    display: none;
+    position: absolute;
+    background-color: #38f3ea;
+    min-width: 10em;
+    top: 2.5em;
+    z-index: 1;
+    padding-bottom: 1em;
+    padding-left: 1em;
+    margin-top: 0.2em;
+}  
+.contenido-desplegable a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+.contenido-desplegable a:hover {
+    background-color: white;
+    border-radius: 3em;
+    width: fit-content;
+}
+.desplegable:hover .contenido-desplegable {
+  display: block;
+}
+.tarjeta {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    align-items: center;
+    background-color: #38f3ea;
+    width: fit-content;
+    padding: 1em;
+}
+.titulo-tarjeta {
+    font-family: "Montserrat";
+    font-size: 2em;
+    color: black;
+    background-image: none;
+    margin: 0.5em;
+    padding: 0.5em;
+    width: fit-content;
+}
+.p-tarjeta {
+    color: black;
+    font-size: 1.1em;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+}
+.mas-info, .mas-info-index {
+    padding: 0.5em 1em 0.5em 1em;
+    margin-top: auto;
+    margin-bottom: auto;
+    color: black;
+    font-size: 1.1em;
+    border-radius: 2em;
+    background-color: #38f3ea;
+    width: fit-content;
+    border-style: solid;
+    border-width: 3px;
+    border-color: black;
+    border-radius: 3em;
+}
+.mas-info:hover, .mas-info-index:hover {
+    background-color: white;
+    border-color: white;
+}
+.mas-info-index {
+    margin-top: 2em;
+    border-width: 0em;
+}
+.p-workshop {
+    padding-top: 0em;
+    margin-top: 0em;
+    text-align:left;
+    margin-block-start: 0em;
+}
+
+  
+                                        /* IDs */
+
+#sharesearch {
+    display: flex;
+    align-items: center;;
+}
+#share {
+    padding: 0.8em;
+    border-radius: 3em;
+    margin-top: 0.2em;
+}
+#share:hover {
+    background-color: white;
+}
+#search {
+    padding: 0.8em;
+    border-radius: 3em;
+    margin-right: 1em;
+    margin-top: 0.2em;
+}
+#search:hover {
+    background-color: white;
+}
+#logo {
+    padding: 1.5em 1.5em 1em 2em;
+    margin: 0;
+}
+#menu {
+    background-color: #869eb7
+}
+#intro {
+    font-family: "Montserrat";
+    font-size: 2.5em;
+    color: white;
+    background-image: linear-gradient(rgb(194, 0, 49), purple);
+    text-align: center;
+    display: block;
+    max-width: none;
+    margin: 0;
+    padding-top: 20%;
+    padding-bottom: 20%;
+}

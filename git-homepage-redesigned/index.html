@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página adaptable - Breakpoints</title>
+    <link rel="stylesheet" href="style.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;700&family=Roboto+Slab:wght@400;700&display=swap"
+        rel="stylesheet">
+    <script src="https://kit.fontawesome.com/7835d51cdf.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="container">
+        <header>
+            <section>
+                <a href="#">
+                    <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 756.9 316.2"
+                        enable-background="new 0 0 756.9 316.2" xml:space="preserve">
+                        <use href="images/gitlogo.svg#Layer_1"></use>
+                    </svg>
+                </a>
+                <h1>--distributed-even-if-your-workflow-isnt</h1>
+            </section>
+            <form>
+                <i id="search-icon" class="fas fa-search"></i>
+                <div id="search-div" class="search">
+                    <input class="search-bar" type="text" placeholder="Search entire site..." name="search">
+                    <button class="search-button" type="submit">Search</button>
+                </div>
+            </form>
+        </header>
+        <main>
+            <article>
+                <p>Git is a <a href="#">free and open source</a> distributed version control system designed to
+                    handle
+                    everything from small to very large projects with speed and efficiency.<br>Git is <a href="#">easy
+                        to learn</a> and has a <a href="#">tiny footprint with lightning fast performance</a>. It
+                    outclasses SCM tools like Subversion, CVS, Perforce, and ClearCase with features like
+                    <a href="#">cheap local branching</a>, convenient <a href="#">staging areas</a>, and <a
+                        href="#">multiple workflows</a>.
+                </p>
+            <picture>
+                <source type="image/svg+xml" media="(min-width: 1000px)" srcset="images/branching.svg#max">
+                <source type="image/svg+xml" media="(min-width: 600px)" srcset="images/branching.svg#med">
+                <img id="branching" src="images/branching.svg#min" alt="branching">
+            </picture>
+            </article>
+            <article id="main-section">
+                <article>
+                    <section id="info">
+                        <ul>
+                            <li>
+                                <a href="#">
+                                    <svg>
+                                        <use href="images/sprite.svg#about"></use>
+                                    </svg>
+                                    <div>
+                                        <h1>About</h1>
+                                        <p>The advantages of Git compared to other source control systems.</p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <svg>
+                                        <use href="images/sprite.svg#documentation"></use>
+                                    </svg>
+                                    <div>
+                                        <h1>Documentation</h1>
+                                        <p>Command reference pages, Pro Git book content, videos and other material.</p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <svg>
+                                        <use href="images/sprite.svg#downloads"></use>
+                                    </svg>
+                                    <div>
+                                        <h1>Downloads</h1>
+                                        <p>GUI clients and binary releases for all major platforms.</p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <svg>
+                                        <use href="images/sprite.svg#community"></use>
+                                    </svg>
+                                    <div>
+                                        <h1>Community</h1>
+                                        <p>Get involved! Bug reporting, mailing list, chat, development and more.</p>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </section>
+                    <section>
+                        <img id="progit" src="images/progit2.png" alt="pro-git">
+                        <p>
+                            <a href="#">Pro Git</a> by Scott Chacon and Ben Straub is available to <a href="#">read
+                                online
+                                for free</a>. Dead tree versions are available on <a href="#">Amazon.com</a>.
+                        </p>
+                    </section>
+                </article>
+                <article>
+                    <section>
+                        <div>
+                            <h1>Latest source release</h1>
+                            <h2>2.26.1</h2>
+                            <h3><a href="#">Release notes (2020-03-25)</a></h3>
+                        </div>
+                        <a href="#" id="download">Download for Windows</a>
+                    </section>
+                    <section>
+                        <ul>
+                            <li>
+                                <a href="#">
+                                    <i class="fas fa-mouse"></i>
+                                    <p>Windows GUIs</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="fas fa-box"></i>
+                                    <p>Tarballs</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="fab fa-apple"></i>
+                                    <p>Mac build</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="fas fa-folder"></i>
+                                    <p>Source code</p>
+                                </a>
+                            </li>
+                        </ul>
+                    </section>
+                </article>
+            </article>
+            <article>
+                <h1>Companies & projects using Git</h1>
+                <ul id="companies">
+                    <li>
+                        <a href="#" class="google">google</a>
+                    </li>
+                    <li>
+                        <a href="#" class="facebook">facebook</a>
+                    </li>
+                    <li>
+                        <a href="#" class="microsoft">microsoft</a>
+                    </li>
+                    <li>
+                        <a href="#" class="twitter">twitter</a>
+                    </li>
+                    <li>
+                        <a href="#" class="linkedin">linkedin</a>
+                    </li>
+                    <li>
+                        <a href="#" class="netflix">netflix</a>
+                    </li>
+                    <li>
+                        <a href="#" class="perl">perl</a>
+                    </li>
+                    <li>
+                        <a href="#" class="postgresql">postgresql</a>
+                    </li>
+                    <li>
+                        <a href="#" class="android">android</a>
+                    </li>
+                    <li>
+                        <a href="#" class="linux">linux</a>
+                    </li>
+                    <li>
+                        <a href="#" class="rails">rails</a>
+                    </li>
+                    <li>
+                        <a href="#" class="qt">qt</a>
+                    </li>
+                    <li>
+                        <a href="#" class="gnome">gnome</a>
+                    </li>
+                    <li>
+                        <a href="#" class="eclipse">eclipse</a>
+                    </li>
+                    <li>
+                        <a href="#" class="kde">kde</a>
+                    </li>
+                    <li>
+                        <a href="#" class="xorg">xorg</a>
+                    </li>
+
+                </ul>
+            </article>
+        </main>
+        <footer>
+            <section>
+                <i class="fas fa-code"></i>
+                <div>
+                    <a href="#">About this site</a>
+                    <p>Patches, suggestions and comments are welcome.</p>
+                </div>
+            </section>
+            <section>
+                <p>Git is a member of <a href="#">Software Freedom Conservancy</a></p>
+            </section>
+        </footer>
+    </div>
+    <script>
+        document.querySelector('#search-icon').onclick = function () {
+            var x = document.getElementById("search-div");
+            if (x.className === "search") {
+                x.className += " search-visible";
+            } else {
+                x.className = "search";
+            }
+        };
+    </script>
+</body>
+
+</html>

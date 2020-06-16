@@ -1,0 +1,413 @@
+@import url('https://fonts.googleapis.com/css2?family=Vollkorn:wght@400;500;600;700;800;900&family=Work+Sans:wght@200;300;400;500;600;700;800&display=swap');
+@import url('bootstrap.css');
+.container {
+    font-family: 'Vollkorn';
+    font-size: large;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Work Sans';
+}
+
+body {
+    background-color: rgb(236, 234, 228);
+}
+
+#logo-subt {
+    padding: 1rem;
+}
+
+#logo {
+    font-family: 'Vollkorn';
+    font-size: 1.4em;
+    color: initial;
+    font-weight: 600;
+}
+
+#subtitle {
+    font-size: .7em;
+    font-weight: 400;
+    color: gray;
+}
+
+#logo, #subtitle {
+    margin: .1em;
+}
+
+header li {
+    font-family: 'Work Sans';
+    font-weight: 500;
+    font-size: .8em;
+    margin: 1em;
+    list-style-type: none;
+}
+
+nav button.navbar-toggled {
+    border: none;
+}
+
+.active {
+    font-weight: 600;
+}
+
+li.nav-item {
+    margin: .4em;
+}
+
+div.dropdown-menu {
+    font: inherit;
+    border: none;
+}
+
+li {
+    list-style-type: square;
+}
+
+.intro {
+    height: 18em;
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 3rem;
+}
+
+#intro-index {
+    background-image: url('../images/fondo.jpg');
+}
+
+#intro-proyectos {
+    background-image: url('../images/estanteria-libros-antiguos.jpg');
+}
+
+#intro-servicios {
+    background-image: url('../images/servicio-restauracion-libro.jpg');
+}
+
+#intro-restauracion {
+    background-image: url('../servicios/images/restauracion-2.jpg');
+    background-position: center;
+}
+
+.intro h1 {
+    font-size: auto;
+    display: block;
+    margin: auto 2rem;
+    width: 100%;
+    color: white;
+    font-weight: 300;
+    text-shadow: black 0 .2rem .2em;
+}
+
+#intro-cookies {
+    background-image: none;
+}
+
+#intro-cookies h1 {
+    text-shadow: none;
+    color: black;
+}
+
+.intro-404 {
+    height: 100vh;
+    width: 100%;
+    margin: 0;
+    padding-top: 4rem;
+}
+
+.intro-404 h1 {
+    text-shadow: none;
+    color: black;
+    margin: 0 0 3rem 0;
+    font-weight: 200;
+    font-size: 5rem;
+}
+
+a#logo-404 {
+    width: fit-content;
+    height: fit-content;
+    margin: 6rem auto;
+}
+
+#logo-404 h2 {
+    font-family: 'Vollkorn';
+    text-transform: uppercase;
+    font-weight: 600;
+    margin: 0 auto;
+    font-size: 1.3rem;
+    width: fit-content;
+    text-align: center;
+}
+
+#logo-404 h3 {
+    color: gray;
+    font-size: .6rem;
+    font-weight: 400;
+    margin: 0 auto;
+    width: fit-content;
+    text-align: center;
+}
+
+#logo-404:hover {
+    color: inherit;
+}
+
+.cookies h2, .cookies p, .cookies li {
+    margin-bottom: 1rem;
+}
+
+.cookies section {
+    margin-bottom: 3rem;
+}
+
+.cookies a, .cookies strong {
+    font-weight: 600;
+}
+
+strong {
+    font-weight: 600;
+}
+
+ul.navbar-nav {
+    margin-left: auto;
+    text-transform: uppercase;
+}
+
+a {
+    text-decoration: none;
+    color: initial;
+}
+
+p a {
+    font-weight: 600;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+img {
+    width: 100%;
+    border-radius: .2rem;
+}
+
+.img-margin-bottom {
+    margin-bottom: 3rem;
+}
+
+figure {
+    padding: 0;
+}
+
+.card {
+    border: none;
+    background-color: rgb(246, 246, 246);
+    width: auto;
+    padding: 2rem;
+    margin-top: 2rem;
+}
+
+.card time {
+    opacity: .6;
+    font-size: .9rem;
+    font-weight: 600;
+    margin-top: 1rem;
+}
+
+.card figure {
+    height: auto;
+    max-height: 20rem;
+    margin-left: auto;
+    margin-right: auto;
+    mix-blend-mode: multiply;
+    overflow: hidden;
+}
+
+.card p {
+    opacity: .8;
+}
+
+.card h2 {
+    font-size: 1.5rem;
+    margin: 1rem 0 1.5rem 0;
+}
+
+.servicios figure {
+    min-width: 8rem;
+    max-width: 15rem;
+}
+
+.servicios figure {
+    margin: 0 auto 2rem auto;
+    height: fit-content;
+}
+
+.read-more {
+    text-align: center;
+    text-transform: uppercase;
+    margin: 1.5rem 0 0 0;
+    font-size: .8rem;
+    font-weight: 600;
+    letter-spacing: .2rem;
+}
+
+form section {
+    margin-bottom: 2rem;
+}
+
+form section div {
+    margin: 0;
+}
+
+form section label {
+    margin-right: 2rem;
+    margin-top: 1rem;
+}
+
+input.card {
+    width: 100%;
+    padding: .8rem;
+}
+
+input.card:focus {
+    background-color: white;
+}
+
+form section:nth-child(3) {
+    margin: 2em 0;
+}
+
+form section:nth-child(3) textarea {
+    width: 100%;
+    height: 10rem;
+}
+
+form input:last-child {
+    margin: inherit auto;
+}
+
+input:focus, textarea:focus, button:focus {
+    outline: none;
+}
+
+textarea.card {
+    padding: .8rem;
+}
+
+textarea:focus {
+    background-color: white;
+}
+
+input.card, textarea.card {
+    margin-top: 1rem;
+    font-family: 'Work Sans';
+}
+
+input.card[type=button] {
+    margin: 4rem 0 4rem auto;
+    padding: .5rem 1rem;
+    width: fit-content;
+    background-color: rgb(31, 26, 16);
+    color: rgb(236, 234, 228);
+    font-family: 'Vollkorn';
+}
+
+.donde-estamos {
+    margin-top: 6rem;
+}
+
+.donde-estamos h2 {
+    margin-bottom: 4rem;
+}
+
+.sitemap {
+    font-family: 'Work Sans';
+}
+
+.sitemap section ul {
+    padding-inline-start: 0;
+    margin-top: 3rem;
+}
+
+.sitemap section ul li {
+    list-style-type: none;
+    margin-top: 2rem;
+}
+
+.sitemap h2 {
+    font-size: 1.5rem;
+    margin-top: 5rem;
+}
+
+footer {
+    background-color: rgb(31, 26, 16);
+    padding: 1.5rem 3rem;
+    margin-top: 5rem;
+    text-align: center;
+}
+
+footer, footer a {
+    font-size: .8rem;
+    font-family: 'Work Sans';
+    color: grey;
+    font-weight: initial;
+}
+
+footer p {
+    margin: 0;
+    padding-bottom: 1rem;
+}
+
+footer nav {
+    margin: 1rem auto;
+    padding-top: 2rem;
+    border-top: rgb(90, 90, 90) 1px solid;
+    width: fit-content;
+}
+
+@media (max-width: 575px) {
+    .container {
+        padding: 2rem;
+    }
+}
+
+@media (min-width: 576px) {
+    .servicios div {
+        margin-left: 2rem;
+    }    
+    div.dropdown-menu.shadow {
+        box-shadow: none;
+    }
+}
+
+@media (min-width: 992px) {
+    nav.navbar {
+        padding-left: 3rem;
+        padding-right: 3rem;
+    }
+    .p-margin-bottom {
+        margin-bottom: 2rem;
+    }
+    .img-margin-bottom {
+        margin: 0;
+    }
+    .cookies {
+        padding: 0 8rem;
+    }
+    footer p {
+        text-align: left;
+        padding-bottom: 0;
+    }
+    footer nav {
+        margin: 0;
+        border: none;
+        padding: 0;
+    }
+    footer nav a {
+        margin-left: 1rem;
+    }
+}
+
+@media (min-width: 1200px) {
+    .servicios div {
+        margin-left: 0;
+    }    
+}

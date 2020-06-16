@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="styles.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1><a href="#"><span>Ser</span> o no Ser <span>adaptativo</span></a></h1>
+            <nav>
+                <div class="burger" id="burger">&#9776;</div>
+                <ul class="main-menu main-nav">
+                    <a href="#" class="menu-element">
+                        <li>Qué es</li>
+                    </a>
+                    <a href="#" class="menu-element">
+                        <li>Todo en relativo</li>
+                    </a>
+                    <a href="#" class="menu-element">
+                        <li>Herramientas</li>
+                    </a>
+                    <a href="#" class="menu-element">
+                        <li>Media queries</li>
+                    </a>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <article>
+                <picture>
+                    <source media="(min-width: 1000px)" srcset="img/foto-desktop.jpg">
+                    <source media="(min-width: 600px)" srcset="img/foto-tablet.jpg">
+                    <img src="img/foto-movil.jpg" alt="Responsive Web Design">
+                </picture>
+                <section>
+                    <h1><span>Todo</span> lo que necesitas saber sobre diseño <span>adaptativo</span></h1>
+                    <h1>Construye tus propios <span>diseños</span></h1>
+                    <h1>Con <span>múltiples</span> herramientas</h1>
+                </section>
+            </article>
+            <article>
+                <section>
+                    <div class="card-header">
+                        <img src="img/aside_home_1.png" alt="Bombilla">
+                        <h1>Lo importante es el contenido</h1>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum dolore aspernatur sapiente quaerat
+                        quisquam. Consequuntur dolorum sit quisquam repudiandae id temporibus quaerat tenetur quos qui
+                        cumque
+                        harum magnam deserunt iusto mollitia repellendus et, consequatur non quam iure atque dolores
+                        dignissimos
+                        doloremque enim. Alias veniam, odit commodi expedita perferendis nesciunt facere.</p>
+                    <a href="#">Más info</a>
+                </section>
+                <section>
+                    <div class="card-header">
+                        <img src="img/aside_home_2.png" alt="Lupa">
+                        <h1>Es, sobre todo, un concepto</h1>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum dolore aspernatur sapiente quaerat
+                        quisquam. Consequuntur dolorum sit quisquam repudiandae id temporibus quaerat tenetur quos qui
+                        cumque
+                        harum magnam deserunt iusto mollitia repellendus et, consequatur non quam iure atque dolores
+                        dignissimos
+                        doloremque enim. Alias veniam, odit commodi expedita perferendis nesciunt facere.</p>
+                    <a href="#">Más info</a>
+                </section>
+                <section>
+                    <div class="card-header">
+                        <img src="img/aside_home_3.png" alt="Engranaje">
+                        <h1>Herramientas</h1>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum dolore aspernatur sapiente quaerat
+                        quisquam. Consequuntur dolorum sit quisquam repudiandae id temporibus quaerat tenetur quos qui
+                        cumque
+                        harum magnam deserunt iusto mollitia repellendus et, consequatur non quam iure atque dolores
+                        dignissimos
+                        doloremque enim. Alias veniam, odit commodi expedita perferendis nesciunt facere.</p>
+                    <a href="#">Más info</a>
+                </section>
+            </article>
+        </main>
+        <footer>
+            <p>&copy; 2016 · Diseño web adaptativo</p>
+        </footer>
+    </div>
+    <script>
+        document.getElementById('burger').addEventListener('click', function () {
+            var b = document.body;
+            b.classList.toggle('translate');
+            b.classList.add('hidden');
+            b.addEventListener('transitionend', function (e) {
+                if (!b.classList.contains('translate')) b.removeAttribute('class');
+            });
+        });
+    </script>
+</body>
+
+</html>
