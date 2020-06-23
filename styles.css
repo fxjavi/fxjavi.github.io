@@ -38,7 +38,7 @@ a {
 }
 
 li {
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
 }
 
 ul {
@@ -77,21 +77,48 @@ a:hover {
 ul {
     list-style-type: none;
     padding-inline-start: 0%;
+    overflow: visible;
 }
 
-svg {
-    width: 9rem;
+.list svg {
     height: 5rem;
+    margin-left: 1rem;
+    opacity: 0;
+    animation: pointinghand 1s ease-in-out infinite;
+}
+
+@keyframes pointinghand {
+    0% {
+        transform: translateX(0);
+        transform: translateY(.8rem);
+    }
+    50% {
+        transform: translateX(2rem);
+    }
+    100% {
+        transform: translateX(0);
+        transform: translateY(.8rem);
+    }
 }
 
 @media (min-width: 1000px) {
 
     .container {
         font-size: 2.2rem;
+        overflow: visible;
     }
 
     main {
         margin: 4rem;
+        overflow: visible;
+    }
+
+    article{
+        overflow: visible;
+    }
+
+    ul {
+        overflow: visible;
     }
 
     h1 {
@@ -112,7 +139,21 @@ svg {
         text-decoration: none;
     }
 
+    li {
+        overflow: visible;
+    }
+
     .list {
         display: flex;
+    }
+
+    .list a {
+        height: fit-content;
+        white-space: nowrap;
+    }
+
+    .list a:hover+svg {
+        opacity: 1;
+        z-index: 50;
     }
 }
