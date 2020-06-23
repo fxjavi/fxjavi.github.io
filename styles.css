@@ -6,12 +6,13 @@ body {
 
 .container {
     margin: 0;
-    font-size: 2rem;
+    padding: 2rem;
+    font-size: 1.5rem;
     animation-name: bg;
     animation-duration: 10s;
     animation-iteration-count: infinite;
     animation-timing-function: cubic-bezier(0.86, 0, 0.07, 1);
-    height: 100vh;
+    height: fit-content;
 }
 
 @keyframes bg {
