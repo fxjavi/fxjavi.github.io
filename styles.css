@@ -2,17 +2,48 @@
 
 body {
     margin: 0;
+    animation-name: bg;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
 }
 
 .container {
     margin: 0;
     padding: 2rem;
-    font-size: 1.5rem;
-    animation-name: bg;
-    animation-duration: 10s;
-    animation-iteration-count: infinite;
-    animation-timing-function: cubic-bezier(0.86, 0, 0.07, 1);
+    font-size: 1.3rem;
     height: fit-content;
+}
+
+
+main {
+    font-family: 'Chivo', sans-serif;
+    margin: 1rem;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Archivo', sans-serif;
+    margin: 0;
+    font-size: 1.8rem;
+    margin: 2rem 0 3rem 0;
+}
+
+header h1 {
+    margin-left: 1rem;
+}
+
+a {
+    color: inherit;
+    animation-name: link;
+    animation-duration: 2s;
+}
+
+li {
+    margin-bottom: 2rem;
+}
+
+ul {
+    margin-bottom: 6rem;
 }
 
 @keyframes bg {
@@ -36,35 +67,6 @@ body {
     }
 }
 
-main {
-    font-family: 'Chivo', sans-serif;
-    margin: 2rem;
-}
-
-h1, h2, h3, h4, h5, h6 {
-    font-family: 'Archivo', sans-serif;
-    margin: 0;
-}
-
-a {
-    text-decoration: none;
-    color: inherit;
-    animation-name: link;
-    animation-duration: 2s;
-}
-
-@keyframes link {
-    0% {
-        transform: translateY(0);
-    }
-    50% {
-        transform: translateY(.5rem);
-    }
-    100% {
-        transform: translateY(0);
-    }
-}
-
 a:hover {
     text-decoration: underline;
 }
@@ -72,4 +74,33 @@ a:hover {
 ul {
     list-style-type: none;
     padding-inline-start: 0%;
+}
+
+@media (min-width: 1000px) {
+
+    .container {
+        font-size: 1.8rem;
+    }
+
+    main {
+        margin: 4rem;
+    }
+
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    header h1 {
+        margin-left: 4rem;
+        margin-top: 5rem;
+    }
+
+    a {
+        display: block;
+        width: fit-content;
+    }
+
+    a:hover {
+        text-decoration: none;
+    }
 }
